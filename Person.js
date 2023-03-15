@@ -1,4 +1,4 @@
-export class Person {
+class Person {
     constructor (name, age = -1){
         this.name = name;
         this.age = age;
@@ -22,4 +22,5 @@ export class Person {
 };
 Canelo = new Person("Canelo");
 console.log(Canelo);
+module.exports = Person;
 

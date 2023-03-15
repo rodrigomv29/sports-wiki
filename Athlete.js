@@ -1,6 +1,7 @@
-const person = require("./Person")
+const Person = require("./Person")
 class Athlete extends Person{
     constructor (name, sport){
+        super();
         this.name = name;
         this.sport = sport;
     }
@@ -16,3 +17,4 @@ class Athlete extends Person{
 }
 Canelo = new Athlete("Canelo", 32);
 Canelo.sayHello();
+ module.exports = Athlete;
