@@ -6,3 +6,4 @@ class Boxer extends combatathlete {
     }
 
 }
+module.exports = combatathlete;
