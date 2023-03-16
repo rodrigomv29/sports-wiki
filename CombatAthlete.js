@@ -4,7 +4,7 @@ class CombatAthlete extends athlete {
     constructor(sport, agency="non-free"){
         super();
         this.sport = sport;
-        this.style = style;
+        this.agency = agency;
     }
     getSport(){
         return this.sport;
@@ -12,11 +12,11 @@ class CombatAthlete extends athlete {
     setSport(sport){
         this.sport = sport
     }
-    getStyle(){
-        return this.style;
+    getAgency(){
+        return this.agency;
     }
-    setStyle(){
-        this.style = style;
+    setAgency(){
+        this.agency = agency;
     }
     isUndefeated(){
         return false;
@@ -25,4 +25,4 @@ class CombatAthlete extends athlete {
         return false;
     }
 
-}
+};
