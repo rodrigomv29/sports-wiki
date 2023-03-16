@@ -26,3 +26,4 @@ class CombatAthlete extends athlete {
     }
 
 };
+module.exports = CombatAthlete;
