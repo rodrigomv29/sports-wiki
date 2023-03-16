@@ -1,7 +1,7 @@
 const athlete = require('./Athlete');
 
 class CombatAthlete extends athlete {
-    constructor(sport, style="technical"){
+    constructor(sport, agency="non-free"){
         super();
         this.sport = sport;
         this.style = style;
