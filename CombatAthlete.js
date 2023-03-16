@@ -13,6 +13,12 @@ class CombatAthlete extends athlete {
     setSport(sport){
         this.sport = sport
     }
+    getNickname(){
+        return this.nickname;
+    }
+    setNickname(nickname){
+        this.nickname = nickname;
+    }
     getAgency(){
         return this.agency;
     }
