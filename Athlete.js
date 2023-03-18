@@ -15,6 +15,7 @@ class Athlete extends Person{
         return false;
     }
 }
-Canelo = new Athlete("Canelo", 32);
-Canelo.sayHello();
- module.exports = Athlete;
+//Canelo = new Athlete("Canelo", 32);
+// Canelo.sayHello();
+// module.exports = Athlete;
+console.log(Athlete);
