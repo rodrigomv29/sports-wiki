@@ -6,8 +6,25 @@
     <title> <%=title%></title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <% if(!isAuthenticated){ %>
+                <li><a href="/login/">Login</a></li>                
+            <% } else { %>
+                <li><a href="/logout/">Logout</a></li>
+            <% } %>
+        </ul>
+    </nav>
     <h1><%=title%></h1>
     <p>Welcome to <%=title%></p>
-    
+    <% if (user) { %>
+    <div class="profileInfo">
+        <img src="<%= user.picture %>" alt="">
+        <p class="name">RODRIGO MORALES</p>
+        <p class="nickname">
+            <%= user.nickname.charAt(0).toUpperCase() + user.nickname.slice(1) %>
+        </p>
+    </div> 
+    <% } %>   
 </body>
 </html>
